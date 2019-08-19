@@ -1,63 +1,88 @@
 body {
   background-color: #d9fdb9;
   max-width: 1200px;
-  margin: 0 auto; }
+  margin: 0 auto;
+}
 
 .nav-ctn {
   float: right;
   text-align: right;
-  max-width: 40%; }
-  .nav-ctn ul li {
-    display: inline-block;
-    margin-bottom: 20px;
-    margin-left: 25px; }
-    .nav-ctn ul li a {
-      color: #1B3802;
-      text-decoration: none; }
-    .nav-ctn ul li :hover {
-      color: #9EA49F; }
-  .nav-ctn ul :first-child {
-    margin-left: 0; }
+  max-width: 40%;
+}
+.nav-ctn ul li {
+  display: inline-block;
+  margin-bottom: 20px;
+  margin-left: 25px;
+}
+.nav-ctn ul li a {
+  color: #1B3802;
+  text-decoration: none;
+}
+.nav-ctn ul li :hover {
+  color: #9EA49F;
+}
+.nav-ctn ul :first-child {
+  margin-left: 0;
+}
 
 .wrapper {
   width: 1000px;
   height: 600px;
   position: relative;
-  padding-bottom: 180px; }
-  .wrapper .header {
-    position: absolute;
-    top: 50px;
-    z-index: 1; }
-    .wrapper .header h1 {
-      font-size: 80px;
-      color: #1B3802; }
-  .wrapper .center-ctn {
-    width: 1000px;
-    height: 600px;
-    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
-    background-color: #FAFAFA;
-    border-radius: 4px;
-    margin: 0 auto;
-    position: absolute;
-    top: 75px;
-    left: 200px; }
-    .wrapper .center-ctn .portfolio-tabs {
-      padding-right: 40px; }
-  .wrapper .flex {
-    display: flex;
-    flex-direction: row; }
-    .wrapper .flex .paragraph {
-      width: 40%;
-      position: relative;
-      top: 40%;
-      padding-left: 20px; }
-    .wrapper .flex .image {
-      width: 60%;
-      position: relative;
-      top: 20%;
-      padding-right: 20px; }
-      .wrapper .flex .image img {
-        width: 100%;
-        border-radius: 4px; }
+  padding-bottom: 180px;
+}
+.wrapper .header {
+  position: absolute;
+  top: 50px;
+  z-index: 1;
+}
+.wrapper .header h1 {
+  font-size: 80px;
+  color: #1B3802;
+}
+.wrapper .center-ctn {
+  width: 1000px;
+  height: 600px;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  background-color: #FAFAFA;
+  border-radius: 4px;
+  margin: 0 auto;
+  position: absolute;
+  top: 75px;
+  left: 200px;
+}
+.wrapper .center-ctn .portfolio-tabs {
+  padding-right: 40px;
+}
+.wrapper .center-ctn .portfolio-content {
+  width: 100%;
+  height: 100%;
+}
+.wrapper .center-ctn .portfolio-content .paragraph {
+  top: 20%;
+}
+.wrapper .center-ctn .portfolio-content .image {
+  top: 10%;
+}
+.wrapper .flex {
+  display: flex;
+  flex-direction: row;
+}
+.wrapper .flex .paragraph {
+  width: 40%;
+  position: relative;
+  top: 40%;
+  padding: 20px;
+}
+.wrapper .flex .image {
+  width: 60%;
+  position: relative;
+  top: 20%;
+  padding-right: 20px;
+}
+.wrapper .flex .image img {
+  width: 100%;
+  border-radius: 4px;
+}
 
 /*# sourceMappingURL=main.css.map */
