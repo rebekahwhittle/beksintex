@@ -1,5 +1,5 @@
 body {
-    background-color: #d9fdb9;
+    background-color: #FFFAEA;
     max-width: 1200px;
     margin: 0 auto;
     // d9fdb9
@@ -51,17 +51,35 @@ body {
             color: #1B3802;
         }
     }
+    .green {
+        background-color: #d9fdb9;
+    }
+    .blue {
+        background-color: #b3ccca; 
+    }
+    .pink {
+        background-color: #fccaab; 
+    }
     .center-ctn {
         width: 1000px;
         height: 600px;
         box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
-        background-color: #FAFAFA;
+        // background-color: #FAFAFA;
         border-radius: 4px;
         margin: 0 auto;
         position: absolute;
         top: 75px;
         left: 200px;
-
+        
+        .green {
+            background-color: #d9fdb9;
+        }
+        .blue {
+            background-color: #b3ccca; 
+        }
+        .pink {
+            background-color: #fccaab; 
+        }
         .portfolio-tabs {
             padding-right: 40px;
         }
