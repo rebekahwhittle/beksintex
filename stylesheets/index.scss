@@ -51,6 +51,15 @@ body {
             color: #1B3802;
         }
     }
+    .green {
+        background-color: #d9fdb9;
+    }
+    .blue {
+        background-color: #b3ccca; 
+    }
+    .pink {
+        background-color: #fccaab; 
+    }
     .center-ctn {
         width: 1000px;
         height: 600px;
@@ -62,9 +71,29 @@ body {
         position: absolute;
         top: 75px;
         left: 200px;
-
+        
+        .green {
+            background-color: #d9fdb9;
+        }
+        .blue {
+            background-color: #b3ccca; 
+        }
+        .pink {
+            background-color: #fccaab; 
+        }
         .portfolio-tabs {
             padding-right: 40px;
+        }
+        .portfolio-content {
+            width: 100%;
+            height: 100%;
+
+            .paragraph {
+                top: 20%;
+            }
+            .image {
+                top: 10%;
+            }
         }
     } 
     .flex {
@@ -75,7 +104,7 @@ body {
             width: 40%;
             position: relative;
             top: 40%;
-            padding-left: 20px;
+            padding: 20px;
         }
         .image {
             width: 60%;
