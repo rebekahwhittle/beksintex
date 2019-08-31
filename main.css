@@ -1,5 +1,5 @@
 body {
-  background-color: #F4EFE9;
+  background-color: #FDFCFA;
   max-width: 1200px;
   margin: 0 auto; }
 
@@ -19,42 +19,52 @@ body {
   .nav-ctn ul :first-child {
     margin-left: 0; }
 
+.flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 20px; }
+  .flex .paragraph {
+    width: 40%;
+    position: relative;
+    top: 40%;
+    padding: 20px; }
+  .flex .image {
+    width: 60%;
+    position: relative;
+    top: 20%;
+    padding-right: 20px; }
+    .flex .image img {
+      width: 100%;
+      border-radius: 4px; }
+
 .wrapper {
-  width: 1000px;
-  height: 600px;
+  padding-top: 60px;
+  width: 1200px;
+  height: auto;
   position: relative;
-  padding-bottom: 180px; }
+  margin: 0 auto; }
   .wrapper .header {
-    background-color: #F4EFE9;
+    background-color: #FFFF;
     position: absolute;
     top: 50px;
     z-index: 1; }
     .wrapper .header h1 {
       font-size: 80px;
       color: #1B3802; }
-  .wrapper .green {
-    background-color: #d9fdb9; }
-  .wrapper .blue {
-    background-color: #b3ccca; }
-  .wrapper .pink {
-    background-color: #fccaab; }
   .wrapper .center-ctn {
-    width: 1000px;
-    height: 600px;
-    border: #1B3802 solid 4px;
+    width: 32%;
+    padding-bottom: 32%;
+    /* Same as width, sets height */
+    margin-bottom: 2%;
+    /* (100-32*3)/2 */
+    position: relative;
+    box-shadow: 0 15px 35px -12px rgba(0, 0, 0, 0.25);
+    background-color: #efdde5;
     border-radius: 4px;
-    margin: 0 auto;
-    position: absolute;
-    top: 75px;
-    left: 200px; }
-    .wrapper .center-ctn .green {
-      background-color: #d9fdb9; }
-    .wrapper .center-ctn .blue {
-      background-color: #b3ccca; }
-    .wrapper .center-ctn .pink {
-      background-color: #fccaab; }
-    .wrapper .center-ctn .portfolio-tabs {
-      padding-right: 40px; }
+    position: relative;
+    top: 10%; }
     .wrapper .center-ctn .portfolio-content {
       width: 100%;
       height: 100%; }
@@ -62,21 +72,29 @@ body {
         top: 20%; }
       .wrapper .center-ctn .portfolio-content .image {
         top: 10%; }
-  .wrapper .flex {
-    display: flex;
-    flex-direction: row; }
-    .wrapper .flex .paragraph {
-      width: 40%;
-      position: relative;
-      top: 40%;
-      padding: 20px; }
-    .wrapper .flex .image {
-      width: 60%;
-      position: relative;
-      top: 20%;
-      padding-right: 20px; }
-      .wrapper .flex .image img {
-        width: 100%;
-        border-radius: 4px; }
+  .wrapper .color-1 {
+    background-color: #582d40; }
+  .wrapper .color-2 {
+    background: #9aa184; }
+  .wrapper .color-3 {
+    background: #b9dcd2; }
+  .wrapper .color-4 {
+    background: #009681; }
+  .wrapper .color-5 {
+    background-color: #c06d59; }
+  .wrapper .color-6 {
+    background-color: #a07462; }
+  .wrapper .color-7 {
+    background-color: #ffc27b; }
+  .wrapper .color-8 {
+    background-color: #fbd872; }
+  .wrapper .color-9 {
+    background-color: #005151; }
+  .wrapper .color-10 {
+    background-color: #acb3b8; }
+  .wrapper .color-11 {
+    background-color: #702082; }
+  .wrapper .color-11 {
+    background-color: #ef4a81; }
 
 /*# sourceMappingURL=main.css.map */
