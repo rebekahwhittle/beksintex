@@ -1,100 +1,122 @@
 body {
   background-color: #FDFCFA;
   max-width: 1200px;
-  margin: 0 auto; }
+  margin: 0 auto;
+}
 
 .nav-ctn {
   float: right;
   text-align: right;
-  max-width: 40%; }
-  .nav-ctn ul li {
-    display: inline-block;
-    margin-bottom: 20px;
-    margin-left: 25px; }
-    .nav-ctn ul li a {
-      color: #1B3802;
-      text-decoration: none; }
-    .nav-ctn ul li :hover {
-      color: #9EA49F; }
-  .nav-ctn ul :first-child {
-    margin-left: 0; }
+  max-width: 40%;
+}
+.nav-ctn ul li {
+  display: inline-block;
+  margin-bottom: 20px;
+  margin-left: 25px;
+}
+.nav-ctn ul li a {
+  color: #1B3802;
+  text-decoration: none;
+}
+.nav-ctn ul li :hover {
+  color: #9EA49F;
+}
+.nav-ctn ul :first-child {
+  margin-left: 0;
+}
 
 .flex {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   flex-wrap: wrap;
-  margin: 20px; }
-  .flex .paragraph {
-    width: 40%;
-    position: relative;
-    top: 40%;
-    padding: 20px; }
-  .flex .image {
-    width: 60%;
-    position: relative;
-    top: 20%;
-    padding-right: 20px; }
-    .flex .image img {
-      width: 100%;
-      border-radius: 4px; }
+  margin: 20px;
+}
+.flex .paragraph {
+  width: 40%;
+  position: relative;
+  top: 40%;
+  padding: 20px;
+}
+.flex .image {
+  width: 60%;
+  position: relative;
+  top: 20%;
+  padding-right: 20px;
+}
+.flex .image img {
+  width: 100%;
+  border-radius: 4px;
+}
 
 .wrapper {
   padding-top: 60px;
   width: 1200px;
   height: auto;
   position: relative;
-  margin: 0 auto; }
-  .wrapper .header {
-    background-color: #FFFF;
-    position: absolute;
-    top: 50px;
-    z-index: 1; }
-    .wrapper .header h1 {
-      font-size: 80px;
-      color: #1B3802; }
-  .wrapper .center-ctn {
-    width: 32%;
-    padding-bottom: 32%;
-    /* Same as width, sets height */
-    margin-bottom: 2%;
-    /* (100-32*3)/2 */
-    position: relative;
-    box-shadow: 0 15px 35px -12px rgba(0, 0, 0, 0.25);
-    background-color: #efdde5;
-    border-radius: 4px;
-    position: relative;
-    top: 10%; }
-    .wrapper .center-ctn .portfolio-content {
-      width: 100%;
-      height: 100%; }
-      .wrapper .center-ctn .portfolio-content .paragraph {
-        top: 20%; }
-      .wrapper .center-ctn .portfolio-content .image {
-        top: 10%; }
-  .wrapper .color-1 {
-    background-color: #582d40; }
-  .wrapper .color-2 {
-    background: #9aa184; }
-  .wrapper .color-3 {
-    background: #b9dcd2; }
-  .wrapper .color-4 {
-    background: #009681; }
-  .wrapper .color-5 {
-    background-color: #c06d59; }
-  .wrapper .color-6 {
-    background-color: #a07462; }
-  .wrapper .color-7 {
-    background-color: #ffc27b; }
-  .wrapper .color-8 {
-    background-color: #fbd872; }
-  .wrapper .color-9 {
-    background-color: #005151; }
-  .wrapper .color-10 {
-    background-color: #acb3b8; }
-  .wrapper .color-11 {
-    background-color: #702082; }
-  .wrapper .color-11 {
-    background-color: #ef4a81; }
+  margin: 0 auto;
+}
+.wrapper .header {
+  background-color: #FFFF;
+  position: absolute;
+  top: 50px;
+  z-index: 1;
+}
+.wrapper .header h1 {
+  font-size: 80px;
+  color: #1B3802;
+}
+.wrapper .center-ctn {
+  width: 25%;
+  padding-bottom: 25%;
+  /* Same as width, sets height */
+  position: relative;
+  background-color: #efdde5;
+  position: relative;
+  top: 10%;
+}
+.wrapper .center-ctn .portfolio-content {
+  width: 100%;
+  height: 100%;
+}
+.wrapper .center-ctn .portfolio-content .paragraph {
+  top: 20%;
+}
+.wrapper .center-ctn .portfolio-content .image {
+  top: 10%;
+}
+.wrapper .color-1 {
+  background-color: #1A4E64;
+}
+.wrapper .color-2 {
+  background: #8ED3DA;
+}
+.wrapper .color-3 {
+  background: #E6D8BD;
+}
+.wrapper .color-4 {
+  background: #F3B7B7;
+}
+.wrapper .color-5 {
+  background-color: #FD7662;
+}
+.wrapper .color-6 {
+  background-color: #2A563F;
+}
+.wrapper .b-t-l-r {
+  border-top-left-radius: 100%;
+}
+.wrapper .b-b-l-r {
+  border-bottom-left-radius: 100%;
+}
+.wrapper .b-t-r-r {
+  border-top-right-radius: 100%;
+}
+.wrapper .b-b-r-r {
+  border-bottom-right-radius: 100%;
+}
+.wrapper .b-r {
+  border-radius: 100%;
+}
 
 /*# sourceMappingURL=main.css.map */
