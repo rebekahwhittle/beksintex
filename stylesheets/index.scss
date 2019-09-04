@@ -1,138 +1,122 @@
-// https://cdn.dribbble.com/users/581199/screenshots/7080960/media/79b901bb87ed74da941afb412712d4a0.jpg
-
 body {
     background-color: #FDFCFA; 
-    max-width: 1200px;
+    // max-width: 1200px;
     margin: 0 auto;
-}
-
-.nav-ctn {
-    float: right;
-    text-align: right;
-    max-width: 40%;
-
-    ul {
-
-       li {
-            display: inline-block;
-            margin-bottom: 20px;
-            margin-left: 25px;
-
-            a {
-                color: #1B3802;
-                text-decoration: none;
-            } 
-            :hover {
-                color: #9EA49F;
-            }
-       }
-       :first-child {
-           margin-left: 0;
-       }
-    }
-}
-
-.flex {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    margin: 20px;
-
-    .paragraph {
-        width: 40%;
-        position: relative;
-        top: 40%;
-        padding: 20px;
-    }
-    .image {
-        width: 60%;
-        position: relative;
-        top: 20%;
-        padding-right: 20px;
-
-        img {
-            width: 100%;
-            border-radius: 4px;
-        }
-    }
 }
 
 .wrapper {
-    padding-top: 60px;
-    width: 1200px;
+    width: 1232px;
     height: auto;
-    position: relative;
-    margin: 0 auto;
+    margin: auto;
 
-    .header {
-        background-color: #FFFF;
+    position: fixed;
+    top: 30%;
+    left: 20%;
+
+    .circle {
+        width: 130px;
+        height: 130px;
+        margin: auto;
+
+        right: 260px;
+        top: -40px;
         position: absolute;
-        top: 50px;
         z-index: 1;
 
-        h1 {
-            font-size: 80px;
-            color: #1B3802;
-        }
-    }
-
-    .center-ctn {
-        width: 25%;
-        padding-bottom: 25%; /* Same as width, sets height */
-        // margin-bottom: 2%; /* (100-32*3)/2 */
-        position: relative;
-        // box-shadow: 0 15px 35px -12px rgba(0, 0, 0, 0.25);
-        background-color: #efdde5;
-        // border-radius: 4px;
-        // margin: 0 auto;
-        position: relative;
-        top: 10%;
-        
-        .portfolio-content {
-            width: 100%;
-            height: 100%;
-
-            .paragraph {
-                top: 20%;
-            }
-            .image {
-                top: 10%;
-            }
-        }
-    }
-    .color-1 {
-        background-color: #1A4E64;
-    } 
-    .color-2 {
-        background: #8ED3DA;
-    }
-    .color-3 {
-        background: #E6D8BD;
-    }
-    .color-4 {
-        background: #F3B7B7;
-    }
-    .color-5 {
-        background-color: #FD7662;
-    }
-    .color-6 {
-        background-color: #2A563F;
-    }
-    .b-t-l-r {
-        border-top-left-radius: 100%;
-    }
-    .b-b-l-r {
-        border-bottom-left-radius: 100%;
-    }
-    .b-t-r-r {
-        border-top-right-radius: 100%;
-    }
-    .b-b-r-r {
-        border-bottom-right-radius: 100%;
-    }
-    .b-r {
+        background-color: #FB6B4B;
         border-radius: 100%;
+        box-shadow: 8px 5px #A5A4A2;
     }
+
+    .square {
+        width: 130px;
+        height: 130px;
+        margin: auto;
+
+        right: 30px;
+        top: 30px;
+        position: absolute;
+        z-index: 1;
+
+        border: 2px solid black;
+        background-color: #FEFEFE;
+        box-shadow: 8px 5px rgb(165,164,162, 0.5);
+        transform: rotate(-15deg);
+    }
+
+    .gray-square {
+        width: 100px;
+        height: 100px;
+        margin: auto;
+
+        left: 10px;
+        top: 90px;
+        position: absolute;
+        z-index: 1;
+
+        border: 2px solid black;
+        background-color: #656A71;        ;
+        box-shadow: 8px 5px rgb(165,164,162, 0.5);
+        transform: rotate(70deg);
+    }
+
+    .yellow-square {
+        width: 204px;
+        height: 101px;
+        margin: auto;
+
+        left: 359px;
+        top: 52px;
+        position: absolute;
+        z-index: 1;
+
+        background-color: #FDC92F;
+    }
+
+    .triangle {
+        margin: auto;
+
+        right: 435px;
+        top: 23px;
+        position: absolute;
+        z-index: 1;
+
+        border-style: solid;
+        border-width: 130px 0 0 130px;
+        border-color: transparent transparent transparent #007bff;
+    }
+
+    .triangle-shadow {
+        margin: auto;
+
+        right: 420px;
+        top: 30px;
+        position: absolute;
+        z-index: 0;
+
+        border-style: solid;
+        border-width: 130px 0 0 130px;
+        border-color: transparent transparent transparent #A5A4A2;
+    }
+
+    .green-background {
+        background-color: #0CA477;
+    }
+
+    .flex {
+        background-color: #F1EEEC;
+
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    
+        .center-ctn {
+            width: 4%;
+            padding-bottom: 4%; /* Same as width, sets height */
+            border: 1px solid black;
+            position: relative;
+        }
+    }
+
 }
 
