@@ -1,5 +1,6 @@
 body {
-  background-color: #FDFCFA;
+  background-color: #ffe0ec;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -11,89 +12,49 @@ body {
   top: 30%;
   left: 20%;
 }
-.wrapper .circle {
-  width: 130px;
-  height: 130px;
-  margin: auto;
-  right: 260px;
-  top: -40px;
-  position: absolute;
-  z-index: 1;
-  background-color: #FB6B4B;
-  border-radius: 100%;
-  box-shadow: 8px 5px #A5A4A2;
-}
-.wrapper .square {
-  width: 130px;
-  height: 130px;
-  margin: auto;
-  right: 30px;
-  top: 30px;
-  position: absolute;
-  z-index: 1;
-  border: 2px solid black;
-  background-color: #FEFEFE;
-  box-shadow: 8px 5px rgba(165, 164, 162, 0.5);
-  transform: rotate(-15deg);
-}
-.wrapper .gray-square {
-  width: 100px;
-  height: 100px;
-  margin: auto;
-  left: 10px;
-  top: 90px;
-  position: absolute;
-  z-index: 1;
-  border: 2px solid black;
-  background-color: #656A71;
-  box-shadow: 8px 5px rgba(165, 164, 162, 0.5);
-  transform: rotate(70deg);
-}
-.wrapper .yellow-square {
-  width: 204px;
-  height: 101px;
-  margin: auto;
-  left: 359px;
-  top: 52px;
-  position: absolute;
-  z-index: 1;
-  background-color: #FDC92F;
-}
-.wrapper .triangle {
-  margin: auto;
-  right: 435px;
-  top: 23px;
-  position: absolute;
-  z-index: 1;
-  border-style: solid;
-  border-width: 130px 0 0 130px;
-  border-color: transparent transparent transparent #007bff;
-}
-.wrapper .triangle-shadow {
-  margin: auto;
-  right: 420px;
-  top: 30px;
-  position: absolute;
-  z-index: 0;
-  border-style: solid;
-  border-width: 130px 0 0 130px;
-  border-color: transparent transparent transparent #A5A4A2;
-}
-.wrapper .green-background {
-  background-color: #0CA477;
-}
 .wrapper .flex {
-  background-color: #F1EEEC;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 .wrapper .flex .center-ctn {
-  width: 4%;
-  padding-bottom: 4%;
+  width: 15%;
+  padding-bottom: 20%;
   /* Same as width, sets height */
-  border: 1px solid black;
   position: relative;
+  border-right: 15px solid #cfd8dc;
+  background-color: #FFFF;
+}
+.wrapper .flex .center-ctn .blue {
+  background-color: #0073de;
+}
+.wrapper .flex .center-ctn .red {
+  background-color: #FF001b;
+}
+.wrapper .flex .center-ctn .yellow {
+  background-color: #ffbb1c;
+}
+.wrapper .flex .center-ctn .green {
+  background-color: #78C13B;
+}
+.wrapper .flex .center-ctn .inner-ctn {
+  width: 140px;
+  height: 150px;
+  position: absolute;
+  top: 6%;
+  left: 12%;
+}
+.wrapper .flex .center-ctn p {
+  width: auto;
+  height: auto;
+  margin: 0;
+  position: absolute;
+  bottom: 15%;
+  left: 13%;
+  color: #cfd8dc;
+  text-transform: uppercase;
+  font-family: "Press Start 2P";
 }
 
 /*# sourceMappingURL=main.css.map */
