@@ -65,17 +65,28 @@ body {
 			height: 122px;
 			background-color: transparent;
 
-			border-left: 2px solid black;
+			border-left: 2px solid #100a07;
             border-right: transparent;
             
             transform: rotate(9deg);
             position: relative;
             top: -85px;
             left: 27px;
-		}
+        }
+        .belly-button {
+            width: 5px;
+            height: 9px;
+
+            background-color: black;
+            border-radius: 100%;
+            
+            position: relative;
+            bottom: 126px;
+            right: 31px;
+        }
 		.hip {
 			width: 105px;
-			height: 231px;
+			height: 299px;
 
 			border: 2px solid #100a07;
 			border-top-right-radius: 85px;
@@ -84,8 +95,32 @@ body {
             
             transform: rotate(18deg);
 			position: relative;
-            bottom: 170px;
-            right: 11px;
-		}
+            bottom: 171px;
+            right: 25px;
+        }
+        .thigh {
+            height: 187px;
+
+            background-color: transparent;
+            border-left: 2px solid #100a07;
+            border-right: transparent;
+
+            transform: rotate(-13deg);
+            position: relative;
+            bottom: 480px;
+            left: -7px;
+        }
+        .pubic {
+            margin: 0;
+            width: 0px;
+            height: 0px;
+
+            border-left: 40px solid #100a07;
+            border-bottom: 40px solid transparent;
+
+            position: relative;
+            bottom: 530px;
+            right: 48px;
+        }
 	}
 }
