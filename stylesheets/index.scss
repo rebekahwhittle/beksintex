@@ -1,70 +1,91 @@
 body {
-    background-color: #ffe0ec;; 
+	background-color: #d3cbc0;
 
-    max-width: 1200px;
-    margin: 0 auto;
+	max-width: 1200px;
+	margin: 0 auto;
 }
 
 .wrapper {
-    width: 1232px;
-    height: auto;
-    margin: auto;
+	// width: 1232px;
+	// height: auto;
+	// margin: auto;
 
-    position: fixed;
-    top: 30%;
-    left: 20%;
+	// position: fixed;
+	// top: 30%;
+	// left: 20%;
 
-    .flex {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-between;
-    
-        .center-ctn {
-            width: 15%;
-            padding-bottom: 20%; /* Same as width, sets height */
+	.woman {
+		.neck {
+			height: 90px;
+			background-color: transparent;
 
+			border-left: 2px solid black;
+			border-right: transparent;
+		}
+		.shoulder {
+			width: 105px;
+			height: 200px;
+
+			border: 2px solid #100a07;
+			border-top-right-radius: 64px;
+			border-left: transparent;
+			border-bottom: transparent;
+
+			transform: skew(0deg, -10deg);
+			position: relative;
+			bottom: 10px;
+		}
+		.round-breast {
+			width: 56px;
+			height: 76px;
+
+			border-left: 2px solid #100a07;
+			border-bottom-left-radius: 61px;
+			border-top-left-radius: 69px;
+			border-bottom: 2px solid #100a07;
+
+			transform: rotate(-48deg);
+			position: relative;
+			bottom: 143px;
+			right: 32px;
+
+			.nipple {
+				width: 11px;
+				height: 11px;
+
+				background-color: #100a07;
+				border-radius: 100%;
+
+				position: relative;
+				left: 15px;
+				top: 46px;
+			}
+		}
+		.stomach {
+			height: 122px;
+			background-color: transparent;
+
+			border-left: 2px solid black;
+            border-right: transparent;
+            
+            transform: rotate(9deg);
             position: relative;
+            top: -85px;
+            left: 27px;
+		}
+		.hip {
+			width: 105px;
+			height: 231px;
 
-            border-right: 15px solid #cfd8dc;
-            background-color: #FFFF;
-
-            .blue {
-                background-color: #0073de;
-            }
-            .red {
-                background-color: #FF001b;
-            }
-            .yellow {
-                background-color: #ffbb1c;
-            }
-            .green {
-                background-color: #78C13B;
-            }
-
-            .inner-ctn {
-                width: 140px;
-                height: 150px;
-
-                position: absolute;
-                top: 6%;
-                left: 12%;
-            }
-
-            p {
-                width: auto;
-                height: auto;
-                margin: 0;
-
-                position: absolute;
-                bottom: 15%;
-                left: 13%;
-
-                color: #cfd8dc;
-                text-transform: uppercase;
-                font-family: 'Press Start 2P';
-            }
-        }
-    }
+			border: 2px solid #100a07;
+			border-top-right-radius: 85px;
+			border-left: transparent;
+			border-bottom: transparent;
+            
+            transform: rotate(18deg);
+			position: relative;
+            bottom: 170px;
+            right: 11px;
+		}
+	}
 }
-
