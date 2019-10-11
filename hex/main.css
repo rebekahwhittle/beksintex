@@ -1,0 +1,50 @@
+body {
+  background-color: #ffe0ec;
+  max-width: 1200px;
+  margin: 0 auto; }
+
+.wrapper {
+  width: 1232px;
+  height: auto;
+  margin: auto;
+  position: fixed;
+  top: 30%;
+  left: 20%; }
+  .wrapper .flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between; }
+    .wrapper .flex .center-ctn {
+      width: 15%;
+      padding-bottom: 20%;
+      /* Same as width, sets height */
+      position: relative;
+      border-right: 15px solid #cfd8dc;
+      background-color: #FFFF; }
+      .wrapper .flex .center-ctn .blue {
+        background-color: #0073de; }
+      .wrapper .flex .center-ctn .red {
+        background-color: #FF001b; }
+      .wrapper .flex .center-ctn .yellow {
+        background-color: #ffbb1c; }
+      .wrapper .flex .center-ctn .green {
+        background-color: #78C13B; }
+      .wrapper .flex .center-ctn .inner-ctn {
+        width: 140px;
+        height: 150px;
+        position: absolute;
+        top: 6%;
+        left: 12%; }
+      .wrapper .flex .center-ctn p {
+        width: auto;
+        height: auto;
+        margin: 0;
+        position: absolute;
+        bottom: 15%;
+        left: 13%;
+        color: #cfd8dc;
+        text-transform: uppercase;
+        font-family: 'Press Start 2P'; }
+
+/*# sourceMappingURL=main.css.map */

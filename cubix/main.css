@@ -1,0 +1,94 @@
+body {
+  background-color: #FDFCFA;
+  max-width: 1200px;
+  margin: 0 auto; }
+
+.nav-ctn {
+  float: right;
+  text-align: right;
+  max-width: 40%; }
+  .nav-ctn ul li {
+    display: inline-block;
+    margin-bottom: 20px;
+    margin-left: 25px; }
+    .nav-ctn ul li a {
+      color: #1B3802;
+      text-decoration: none; }
+    .nav-ctn ul li :hover {
+      color: #9EA49F; }
+  .nav-ctn ul :first-child {
+    margin-left: 0; }
+
+.flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 20px; }
+  .flex .paragraph {
+    width: 40%;
+    position: relative;
+    top: 40%;
+    padding: 20px; }
+  .flex .image {
+    width: 60%;
+    position: relative;
+    top: 20%;
+    padding-right: 20px; }
+    .flex .image img {
+      width: 100%;
+      border-radius: 4px; }
+
+.wrapper {
+  padding-top: 60px;
+  width: 1200px;
+  height: auto;
+  position: relative;
+  margin: 0 auto; }
+  .wrapper .header {
+    background-color: #FFFF;
+    position: absolute;
+    top: 50px;
+    z-index: 1; }
+    .wrapper .header h1 {
+      font-size: 80px;
+      color: #1B3802; }
+  .wrapper .center-ctn {
+    width: 25%;
+    padding-bottom: 25%;
+    /* Same as width, sets height */
+    position: relative;
+    background-color: #efdde5;
+    position: relative;
+    top: 10%; }
+    .wrapper .center-ctn .portfolio-content {
+      width: 100%;
+      height: 100%; }
+      .wrapper .center-ctn .portfolio-content .paragraph {
+        top: 20%; }
+      .wrapper .center-ctn .portfolio-content .image {
+        top: 10%; }
+  .wrapper .color-1 {
+    background-color: #1A4E64; }
+  .wrapper .color-2 {
+    background: #8ED3DA; }
+  .wrapper .color-3 {
+    background: #E6D8BD; }
+  .wrapper .color-4 {
+    background: #F3B7B7; }
+  .wrapper .color-5 {
+    background-color: #FD7662; }
+  .wrapper .color-6 {
+    background-color: #2A563F; }
+  .wrapper .b-t-l-r {
+    border-top-left-radius: 100%; }
+  .wrapper .b-b-l-r {
+    border-bottom-left-radius: 100%; }
+  .wrapper .b-t-r-r {
+    border-top-right-radius: 100%; }
+  .wrapper .b-b-r-r {
+    border-bottom-right-radius: 100%; }
+  .wrapper .b-r {
+    border-radius: 100%; }
+
+/*# sourceMappingURL=main.css.map */
