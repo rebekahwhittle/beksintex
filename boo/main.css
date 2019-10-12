@@ -1,10 +1,10 @@
 * {
-  background-color: #DBAE8E; }
+  background-color: #dbae8e; }
 
 .card-container {
   width: 400px;
   height: 600px;
-  background-color: #DBAE8E;
+  background-color: #dbae8e;
   background-image: url(./assets/patter-background.png);
   background-size: 45%;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
@@ -26,9 +26,9 @@
       width: 80%;
       margin: 0 auto; }
       .card-container .card .card-text h2 {
-        font-family: 'Creepster';
+        font-family: "Creepster";
         background: none;
-        color: #FDF9EE;
+        color: #fdf9ee;
         font-size: 80px;
         margin: 0 auto;
         width: 100%;
@@ -39,12 +39,81 @@
 .inside-card-container {
   width: 800px;
   height: 600px;
-  background-color: #A95A1C;
+  background-color: #a95a1c;
   background-image: url(./assets/tan-background-texture.png);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
   margin: 0 auto;
   margin-top: 4rem; }
-  .inside-card-container img {
-    width: 100%; }
+  .inside-card-container .inside-card {
+    background: transparent; }
+    .inside-card-container .inside-card .popup {
+      background: transparent;
+      margin: auto;
+      width: 100%;
+      min-height: 600px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between; }
+      .inside-card-container .inside-card .popup .bats-container {
+        background: transparent;
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        width: 30%;
+        height: 50%;
+        padding: 1.5rem;
+        padding-left: .25rem;
+        position: relative;
+        left: 0; }
+        .inside-card-container .inside-card .popup .bats-container .bats {
+          background: transparent;
+          width: 40%;
+          height: 100%;
+          padding-bottom: 2rem;
+          opacity: .8; }
+      .inside-card-container .inside-card .popup .ghost-container {
+        box-shadow: inset 6px -2px 13px -3px rgba(169, 90, 28, 0.64);
+        background: transparent;
+        width: 50%;
+        padding: 0.5rem; }
+        .inside-card-container .inside-card .popup .ghost-container .ghost-background {
+          align-items: center;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around;
+          margin: 1rem;
+          margin-top: 1.5rem;
+          position: relative;
+          background-image: url(./assets/black-texture.png);
+          box-shadow: 0 6px 6px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset; }
+          .inside-card-container .inside-card .popup .ghost-container .ghost-background::after, .inside-card-container .inside-card .popup .ghost-container .ghost-background::before {
+            content: "";
+            position: absolute;
+            z-index: -1;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+            top: 50%;
+            bottom: 0;
+            left: 10px;
+            right: 10px;
+            border-radius: 100px / 10px; }
+        .inside-card-container .inside-card .popup .ghost-container .ghost {
+          background: transparent;
+          width: 320px; }
+        .inside-card-container .inside-card .popup .ghost-container .card-text {
+          background: transparent;
+          width: 80%; }
+          .inside-card-container .inside-card .popup .ghost-container .card-text h2 {
+            font-family: "Creepster";
+            background: none;
+            color: #fdf9ee;
+            font-size: 80px;
+            margin: 0 auto;
+            width: 100%;
+            text-align: center;
+            margin-top: 2rem;
+            background: transparent; }
 
 /*# sourceMappingURL=main.css.map */
