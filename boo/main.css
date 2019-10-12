@@ -1,0 +1,39 @@
+* {
+  background-color: #DBAE8E; }
+
+.card-container {
+  width: 400px;
+  height: 600px;
+  background-color: #DBAE8E;
+  background-image: url(./assets/patter-background.png);
+  background-size: 45%;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  margin: 0 auto;
+  margin-top: 4rem; }
+  .card-container .card {
+    height: 554px;
+    width: 354px;
+    background-color: transparent;
+    border: 4px solid #dbae8e;
+    position: absolute;
+    top: 84px;
+    left: 540px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly; }
+    .card-container .card .card-text {
+      background: none;
+      width: 80%;
+      margin: 0 auto; }
+      .card-container .card .card-text h2 {
+        font-family: 'Creepster';
+        background: none;
+        color: #FDF9EE;
+        font-size: 80px;
+        margin: 0 auto;
+        width: 100%;
+        text-align: center; }
+    .card-container .card img {
+      width: 100%; }
+
+/*# sourceMappingURL=main.css.map */
