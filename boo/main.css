@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   background-color: #dbae8e; }
 
@@ -16,6 +17,7 @@
   background-color: #dbae8e;
   background-image: url(./assets/patter-background.png);
   background-size: 45%;
+  box-shadow: 8px 0 5px -2px rgba(54, 28, 8, 0.67);
   margin: 0 auto;
   margin-top: 4rem;
   transform: rotateY(20deg); }
@@ -43,6 +45,9 @@
         text-align: center; }
     .card-container .card img {
       width: 100%; }
+  .card-container:hover {
+    cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>🎃</text></svg>") 16 0, auto;
+    /*emojicursor.app*/ }
 
 .inside-card-container {
   width: 800px;
