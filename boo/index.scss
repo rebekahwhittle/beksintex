@@ -9,8 +9,8 @@
 
 .peak-inside {
 	position: absolute;
-    width: 200px;
-    height: 585px;
+	width: 200px;
+	height: 585px;
 
 	background-color: #a95a1c;
 	left: 50.5%;
@@ -31,7 +31,7 @@
 	background-color: #dbae8e;
 	background-image: url(./assets/patter-background.png);
 	background-size: 45%;
-	box-shadow: 8px 0 5px -2px rgba(54,28,8,0.67), -43px 47px 50px -47px rgba(0,0,0,0.75);
+	box-shadow: 8px 0 5px -2px rgba(54, 28, 8, 0.67), -43px 47px 50px -47px rgba(0, 0, 0, 0.75);
 
 	margin: 0 auto;
 	margin-top: 4rem;
@@ -75,9 +75,11 @@
 	}
 
 	&:hover {
-		cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>🎃</text></svg>") 16 0,auto; /*emojicursor.app*/;
+		cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>🎃</text></svg>") 16 0, auto;
+		/*emojicursor.app*/
+		;
 		transform: rotateY(-30deg);
-		box-shadow: 24px 0 15px -3px rgba(54, 28, 8, 0.67), -43px 47px 50px -47px rgba(0,0,0,0.75);
+		box-shadow: 24px 0 15px -3px rgba(54, 28, 8, 0.67), -43px 47px 50px -47px rgba(0, 0, 0, 0.75);
 	}
 }
 
@@ -112,34 +114,34 @@
 
 			display: flex;
 			flex-direction: row;
-            justify-content: space-between;
-            
+			justify-content: space-between;
+
 
 			.bats-container {
 				background: transparent;
 				position: relative;
 
 				display: flex;
-                flex-direction: row;
-                flex-wrap: wrap;
+				flex-direction: row;
+				flex-wrap: wrap;
 				justify-content: space-around;
-                align-items: center;
-                
-                width: 30%;
-                height: 50%;
-                padding: 1.5rem;
-                padding-left: .25rem;
+				align-items: center;
+
+				width: 30%;
+				height: 50%;
+				padding: 1.5rem;
+				padding-left: .25rem;
 
 
-                position: relative;
-                left: 0;
+				position: relative;
+				left: 0;
 
 				.bats {
 					background: transparent;
-                    width: 40%;
-                    height: 100%;
-                    padding-bottom: 2rem;
-                    opacity: .8;
+					width: 40%;
+					height: 100%;
+					padding-bottom: 2rem;
+					opacity: .8;
 				}
 
 				// @keyframes width-ghost {
@@ -155,11 +157,11 @@
 			}
 
 			.ghost-container {
-                box-shadow: inset 6px -2px 13px -3px rgba(169,90,28,0.64);
+				box-shadow: inset 6px -2px 13px -3px rgba(169, 90, 28, 0.64);
 				background: transparent;
 
 				width: 50%;
-                padding: 0.5rem;
+				padding: 0.5rem;
 
 				.ghost-background {
 					align-items: center;
@@ -174,49 +176,73 @@
 					background-image: url(./assets/black-texture.png);
 					box-shadow: 0 6px 6px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
 
-					&::after, &::before {
-						content:"";
-						position:absolute; 
-						z-index:-1;
-						box-shadow:0 0 20px rgba(0,0,0,0.8);
-						top:50%;
-						bottom:0;
-						left:10px;
-						right:10px;
-						border-radius:100px / 10px;
+					&::after,
+					&::before {
+						content: "";
+						position: absolute;
+						z-index: -1;
+						box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+						top: 50%;
+						bottom: 0;
+						left: 10px;
+						right: 10px;
+						border-radius: 100px / 10px;
 					}
-					
+
 				}
 
 				.ghost-placeholder {
-					background-image: url(./assets/black-texture.png);;
+					background-image: url(./assets/black-texture.png);
+					;
 					height: 320px;
-					// animation: width-ghost 2s;
 
-					// @keyframes width-ghost {
-					// 	0% {
-					// 		width: 320px;
-					// 	}
-	
-					// 	100% {
-					// 		width: 600px
-					// 	}
-					// }
-                }
-                
+				}
+
+				.ghost {
+					background: transparent;
+					width: 320px;
+
+					animation: ghost-popout 1.8s;
+
+					@keyframes ghost-popout {
+						0% {
+							transform: scale(1);
+
+							position: relative;
+							right: 200px;
+							bottom: 100px;
+						}
+
+						70% {
+							transform: scale(3);
+
+							position: relative;
+							right: 200px;
+							bottom: 100px;
+
+						}
+
+						100% {
+							position: relative;
+							right: 0;
+							bottom: 0;
+						}
+					}
+				}
+
 				.card-text {
 					background: transparent;
-                    width: 80%;
+					width: 80%;
 
 					h2 {
-                        font-family: "Creepster";
-                        background: none;
-                        color: #fdf9ee;
-                        font-size: 80px;
-                        margin: 0 auto;
-                        width: 100%;
-                        text-align: center;
-                        margin-top: 2rem;
+						font-family: "Creepster";
+						background: none;
+						color: #fdf9ee;
+						font-size: 80px;
+						margin: 0 auto;
+						width: 100%;
+						text-align: center;
+						margin-top: 2rem;
 
 						background: transparent;
 					}
@@ -224,8 +250,9 @@
 			}
 		}
 	}
-	&:hover {
-		cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>👻</text></svg>") 16 0,auto; /*emojicursor.app*/;
 
+	&:hover {
+		cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>👻</text></svg>") 16 0, auto;
+		/*emojicursor.app*/
 	}
 }

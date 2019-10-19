@@ -131,6 +131,25 @@
         .inside-card-container .inside-card .popup .ghost-container .ghost-placeholder {
           background-image: url(./assets/black-texture.png);
           height: 320px; }
+        .inside-card-container .inside-card .popup .ghost-container .ghost {
+          background: transparent;
+          width: 320px;
+          animation: ghost-popout 1.8s; }
+@keyframes ghost-popout {
+  0% {
+    transform: scale(1);
+    position: relative;
+    right: 200px;
+    bottom: 100px; }
+  70% {
+    transform: scale(3);
+    position: relative;
+    right: 200px;
+    bottom: 100px; }
+  100% {
+    position: relative;
+    right: 0;
+    bottom: 0; } }
         .inside-card-container .inside-card .popup .ghost-container .card-text {
           background: transparent;
           width: 80%; }
