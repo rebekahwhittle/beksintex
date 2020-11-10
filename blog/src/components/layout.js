@@ -27,7 +27,7 @@ const Layout = ({ location, title, children }) => {
       <footer>
         💅🏼 powered by cofffee and 
         {` `}
-        <a href="https://open.spotify.com/artist/06HL4z0CvFAxyc27GXpf02?si=l5in-8YFQPCH7rY1t0zflw">taylor swift</a>
+        <a target="_blank" href="https://open.spotify.com/artist/06HL4z0CvFAxyc27GXpf02?si=l5in-8YFQPCH7rY1t0zflw">taylor swift</a>
       </footer>
     </div>
   )
