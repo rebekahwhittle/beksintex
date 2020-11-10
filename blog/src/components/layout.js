@@ -9,13 +9,13 @@ const Layout = ({ location, title, children }) => {
   if (isRootPath) {
     header = (
       <h1 className="main-heading">
-        <Link to="/">{title}</Link>
+        <Link to="/">🤠</Link>
       </h1>
     )
   } else {
     header = (
       <Link className="header-link-home" to="/">
-        {title}
+        🤠
       </Link>
     )
   }
@@ -25,9 +25,9 @@ const Layout = ({ location, title, children }) => {
       <header className="global-header">{header}</header>
       <main>{children}</main>
       <footer>
-        © {new Date().getFullYear()}, Built with
+        💅🏼 powered by cofffee and 
         {` `}
-        <a href="https://www.gatsbyjs.com">Gatsby</a>
+        <a href="https://open.spotify.com/artist/06HL4z0CvFAxyc27GXpf02?si=l5in-8YFQPCH7rY1t0zflw">taylor swift</a>
       </footer>
     </div>
   )
