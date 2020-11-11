@@ -53,7 +53,7 @@ const Bio = () => {
       )} */}
       {author?.name && (
         <p>
-          howdy! i'm <a target="_blank" href="https://github.com/rebekahwhittle">beks</a> and these are my musings 😌
+          howdy! i'm <a target="_blank" href="https://github.com/rebekahwhittle">beks</a> and these are my musings
         </p>
       )}
     </div>
