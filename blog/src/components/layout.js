@@ -14,9 +14,7 @@ const Layout = ({ location, title, children }) => {
     )
   } else {
     header = (
-      <Link className="header-link-home" to="/">
-         🤠
-      </Link>
+      <Link className="header-link-home" to="/"> 🤠 </Link>
     )
   }
 
@@ -25,9 +23,7 @@ const Layout = ({ location, title, children }) => {
       <header className="global-header">{header}</header>
       <main>{children}</main>
       <footer>
-        powered by coffee and 
-        {` `}
-        <a target="_blank" href="https://open.spotify.com/artist/06HL4z0CvFAxyc27GXpf02?si=t7zb9rewR524sJ_7ZqZ5Kg">taylor swift</a>
+        💅🏼 powered by tacos and <a href="https://open.spotify.com/artist/06HL4z0CvFAxyc27GXpf02?si=l5in-8YFQPCH7rY1t0zflw">taylor swift</a>
       </footer>
     </div>
   )

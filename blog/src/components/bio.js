@@ -41,19 +41,9 @@ const Bio = () => {
 
   return (
     <div className="bio">
-      {/* {avatar && (
-        <Image
-          fixed={avatar}
-          alt={author?.name || ``}
-          className="bio-avatar"
-          imgStyle={{
-            borderRadius: `50%`,
-          }}
-        />
-      )} */}
       {author?.name && (
         <p>
-          howdy! i'm <a target="_blank" href="https://github.com/rebekahwhittle">beks</a> and these are my musings
+          howdy! i'm <a href="https://github.com/rebekahwhittle">beks</a> and these are my musings 😌
         </p>
       )}
     </div>
