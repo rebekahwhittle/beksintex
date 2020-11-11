@@ -1,6 +1,5 @@
 ---
 title: Do Less
-date: ""
 description: Productivity isn't about doing more, it's about doing less.
 ---
 

@@ -1,6 +1,5 @@
 ---
 title: What Is Grace?
-date: ""
 description: What role does grace play outside of religiosity?
 ---
 
