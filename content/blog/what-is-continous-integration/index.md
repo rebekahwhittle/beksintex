@@ -1,6 +1,14 @@
+---
+title: CircleCI - Data Driven
+description: How do you become a cutting edge engineering team.
+draft: true
+---
+
 ### CircleCI - Data Driven
 
-> Namely, we suggest that leaders focus on building resilient teams and preventing individual burnout.
+> **In times of uncertainty, developers looked to automation to create stability in systems they can control.**
+>
+> **Namely, we suggest that leaders focus on building resilient teams and preventing individual burnout.**
 
 
 
@@ -42,10 +50,6 @@ meantime to recovery goal: **1hr**
 success rate goal: **90%** 
 
 duration goal: **5 - 10mins**
-
-
-
-> **In times of uncertainty, developers looked to automation to create stability in systems they can control.**
 
 
 

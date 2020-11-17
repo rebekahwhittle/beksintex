@@ -6,7 +6,7 @@ module.exports = {
       summary: `my musings`,
     },
     description: `a blog for my mind`,
-    siteUrl: `https://beksintex.com`
+    siteUrl: `http://www.beksintex.com`
   },
   plugins: [
     {
