@@ -1,78 +1,72 @@
 ---
-title: CircleCI - Data Driven
-description: How do you become a cutting edge engineering team.
+title: What Is Continous Integration?
+description: Continous Integration and the thanksgiving food list.
 draft: true
----
+--
 
-### CircleCI - Data Driven
+#### What's your favorite thanksgiving food?
 
-> **In times of uncertainty, developers looked to automation to create stability in systems they can control.**
+Mine, personally, is the sweet potatoe casserole. Maybe it's a southern thing but those warm, sweet, fluffy potatoes blanketed under marshmallows make me a very happy lady. 
+
+My friendsgiving, the 'friends only - no family drama' thanksgiving is just around the corner and we were trying to mitigate who was bringing what. I _of course_ volunteered to bring - ya guessed it - sweet potatoe casserole and green beans. As I'm writing this my candied pecans and marshmellows await their fate of being roasted in the oven. 
+
+Now that you're in the third paragraph of this blog post you're probably thinking you clicked the wrong article. Let me quell your anxiety - you're on the right post. I think it might be easier to understand _why_ people and teams use CI and not just describe _what_ it is. 
+
+So, back to friendsgiving - we're all trying to plan who is bringing what. This was the working list: 
+
+> Jamie: pie
 >
-> **Namely, we suggest that leaders focus on building resilient teams and preventing individual burnout.**
+> Lisa: turkey
+>
+> The Smiths: ham
+>
+> Beks: sweet potatoes, green beans
+>
+> Lyn: mac'n'cheese, mashed potatoes
+
+It was a screenshot we had in our group text to manage who was brinigng what. Now, I being myself invited another friend to friendsgiving and asked if they'd pitch in. I sent the screenshot letting them know what everyone else was bringing. They texted saying, "I'll bring a salad!" So then I went and texted the group chat, they're not in it 😬, and said my new friend was bringing a salad. 
+
+Now, _another_ friend have invited someone else and that *new* person was bringing a salad. I receieved an updated version of the list which added new friend. 
 
 
 
-need both teams & people _processes_ that can **scale**
+> **Daniel: salad**
+>
+> Jamie: pie
+>
+> Lisa: turkey
+>
+> The Smiths: ham
+>
+> Beks: sweet potatoes, green beans
+>
+> Lyn: mac'n'cheese, mashed potatoes
 
-key element are _exhaustive test coverage_ - you need high confidence _in_ your test coverage
-
-passing test don't just mean no bugs - they _could_ mean an absence of test _coverage_ 
-
-##### What does a high-performing team look like?
-
-* throughput: average number of workflows you run a day
-  * workflow run are indiciating how many units are moving through app development pipeline
-  * commit size is important - too large means hard to fix, too small means not meaningful deploys
-  * setting baseline metrics assists in forcasting productiving 
-    * we're not tracking deploy rate - we're tracking pipeline coverage 
-* meantime to recovery: average time of failed job to making it a succesful job
-  * metric gives visiblity into _test coverage_ of your application
-    * alievates fear of inserting buggy code 
-* success rate: the percentage of green builds or passing builds
-  * tracking success rate on main branches not topic branches 
-    * failures on topic branches is valuable & expected
-    * failures on main branches points to stability issues 
-* duration:  how long your workflow takes
-  * how quickly are your developers getting a signal of pass / fail? 
-  * can't fix what you don't know so gotta make it quick 
-  * rich information with quick duration = best developer feedback loop
-    * testing is _vital here_ but lets' think outside of ✅ or ❌
-      * build passed - experiment succeeded 
-      * build failed - experiment failed
-      * erros - experiment failed to conclude 
+Ugh, so now I have to go back to MY friend and let them know they should bring something else as 'salad' is already taken. Also, unless you're incredible at salads that _shouldn't_ be what you bring to a thanksgiving feast but I digress. Quickly I get a new text saying that's fine and they'll bring artisan bread and cranberry sauce. This gets approved by the group chat and we update the list as follows: 
 
 
 
-throughput goal: **0.7 times a day**
-
-meantime to recovery goal: **1hr**
-
-success rate goal: **90%** 
-
-duration goal: **5 - 10mins**
-
-
-
-##### How do you build resilient teams?
-
-Too small of a team decreases the pace of innovation. Steady momentum and forward focus are important to keeping teams progressing. 
-
-Your team will be able to balance 3 priorities: 
-
-1. Creating user-centric features - bettering your customer's expereince 
-2. Technical ivestments - managing technical debt keeps your team afloat
-3. Room for escalations & defects - systems break preventing users to achieve their goals
+> **Natalie: artisan bread, cranberry sauce**
+>
+> Daniel: salad
+>
+> Jamie: pie
+>
+> Lisa: turkey
+>
+> The Smiths: ham
+>
+> Beks: sweet potatoes, green beans
+>
+> Lyn: mac'n'cheese, mashed potatoes
 
 
 
-##### CircleCI features for high-performing teams
+Wow okay so that's our _final_ list and hopefully our Friendsgiving is a delicious feast. 
 
-throughput - VCS integration, Re-Run in UI, On commit trigger, Orbs
+That was a bit of a headache to read and possibly follow along but I can only imagine that you or other friends _have_ at some point experienced this while trying to plan. Things can get messy real quick. Now imagine for a second that this is your large software application that is viewed by millions of people and instead of a handful of friends you have tens of developers all woring on this platform and making changes? That's the _problem_ that CI solves. 
 
-meantime to recovery - SSHing, Re-Running a Workflow, Artifacts  
+We've got developers all making changes to a code base and checking against one anothers code to make sure that their builds and tests are passing properly. It organizes a system to work towards lean and healthy code - just like me after friendsgiving, lean and healthy 🙃. 
 
-success rate - Insights Dashboard & Insights API 
+There are a lot of different tooling options for continous integration and this is the problem their trying to solve. Hopefully this enlightened you just a bit and also made you hungry! 
 
-duration - Test Splitting, Caching, Resource Class Sizes
-
-*Premium Support packages lead to high-performing teams.*
