@@ -4,49 +4,67 @@ description: Continous Integration and the thanksgiving food list.
 draft: true
 --
 
-#### What's your favorite thanksgiving food?
+##### What's your favorite thanksgiving food?
 
-Mine, personally, is the sweet potatoe casserole. Maybe it's a southern thing but those warm, sweet, fluffy potatoes blanketed under marshmallows make me a very happy lady. 
+Mine, *personally*, is sweet potatoe casserole. Maybe it's a southern thing, but those warm, sweet, fluffy potatoes blanketed under marshmallows make my tastebuds come alive. I'd go so far to argue that a Thanksgiving feast isn't complete without this sweet and savory dish.  
 
-My friendsgiving, the 'friends only - no family drama' thanksgiving is just around the corner and we were trying to mitigate who was bringing what. I _of course_ volunteered to bring - ya guessed it - sweet potatoe casserole and green beans. As I'm writing this my candied pecans and marshmellows await their fate of being roasted in the oven. 
+My friendsgiving, (friends only - no family drama) was the other night. As we were planning, we began to mitigate who was bringing what. Of course, I volunteered to bring a sweet potatoe casserole and green beans!
 
-Now that you're in the third paragraph of this blog post you're probably thinking you clicked the wrong article. Let me quell your anxiety - you're on the right post. I think it might be easier to understand _why_ people and teams use CI and not just describe _what_ it is. 
+Before we keep going I should quell your anxiety. Yes, you clicked the right blog post. Yes, I will tie this back to continous integration. No, I will *not* be sharing my secret ingredident for the best sweet potatoe casserole. 
 
-So, back to friendsgiving - we're all trying to plan who is bringing what. This was the working list: 
+Back to friendsgiving planning. 
 
-> Jamie: pie
+For context, there was a group chat with a few people but outside of that text we could invite friends and delegate what they should bring. 
+
+In the group chat this was the working list: 
+
+
+
+> Jamie: pies
 >
 > Lisa: turkey
 >
-> The Smiths: ham
+> The Smiths: ham, rolls
 >
 > Beks: sweet potatoes, green beans
 >
 > Lyn: mac'n'cheese, mashed potatoes
 
-It was a screenshot we had in our group text to manage who was brinigng what. Now, I being myself invited another friend to friendsgiving and asked if they'd pitch in. I sent the screenshot letting them know what everyone else was bringing. They texted saying, "I'll bring a salad!" So then I went and texted the group chat, they're not in it 😬, and said my new friend was bringing a salad. 
 
-Now, _another_ friend have invited someone else and that *new* person was bringing a salad. I receieved an updated version of the list which added new friend. 
+
+Outside of this group text I invited two seperate friends. I sent the above list to both people and kindly asked they contribute and bring something. I awaited their responses. 
+
+Daniel responded first and said he'd bring a salad. Although I wanted to push back and ask who the hell eats healthy soggy greens on Thanksgiving, I didn't, and instead added him to the working list. 
+
+Updated list:
 
 
 
 > **Daniel: salad**
 >
-> Jamie: pie
+> Jamie: pies
 >
 > Lisa: turkey
 >
-> The Smiths: ham
+> The Smiths: ham, rolls
 >
 > Beks: sweet potatoes, green beans
 >
 > Lyn: mac'n'cheese, mashed potatoes
 
-Ugh, so now I have to go back to MY friend and let them know they should bring something else as 'salad' is already taken. Also, unless you're incredible at salads that _shouldn't_ be what you bring to a thanksgiving feast but I digress. Quickly I get a new text saying that's fine and they'll bring artisan bread and cranberry sauce. This gets approved by the group chat and we update the list as follows: 
+
+
+Now remember, I asked two seperate friends if they would bring something. Daniel responded first, but quickly after we'd updated the list Natalie responded and said she'd bring "a salad!". *(I'm learning a lot about my friends* 🤦🏼‍♀️*)*
+
+Natalie doesn't know that Daniel has already volunteered to bring soggy greens. She is looking at the outdated list. Of course I send her the updated list and ask if she'll bring something else. Thankfully she volunteers cranberry sauce and another desert.
+
+I have to again update the _main_ working list.
+
+Updated list:
 
 
 
-> **Natalie: artisan bread, cranberry sauce**
+> **Natalie: cranberry sauce and desert**
 >
 > Daniel: salad
 >
@@ -62,11 +80,16 @@ Ugh, so now I have to go back to MY friend and let them know they should bring s
 
 
 
-Wow okay so that's our _final_ list and hopefully our Friendsgiving is a delicious feast. 
+Hopefully you feel the annoyance and hassle that the above entailed. This manual process of updating a main list and attempting to inform everyone of what is changing is cumbersome. Thankfully with this scenario the worst thing that could happen is that there were two salads that no one ate. But if you translate this over to something like... software, then we have some problems. 
 
-That was a bit of a headache to read and possibly follow along but I can only imagine that you or other friends _have_ at some point experienced this while trying to plan. Things can get messy real quick. Now imagine for a second that this is your large software application that is viewed by millions of people and instead of a handful of friends you have tens of developers all woring on this platform and making changes? That's the _problem_ that CI solves. 
+In software development we have a large code base that's constantly changing. You can have 2 developers or 200 developers making changes to code locally and then trying to add their changes into the repository. In order to prevent copious amounts of bugs and breaks a system has to be implemented to manage this ever changing code - continous integration.
 
-We've got developers all making changes to a code base and checking against one anothers code to make sure that their builds and tests are passing properly. It organizes a system to work towards lean and healthy code - just like me after friendsgiving, lean and healthy 🙃. 
+Continous integration is the communication of changes against a working main base of code. 
 
-There are a lot of different tooling options for continous integration and this is the problem their trying to solve. Hopefully this enlightened you just a bit and also made you hungry! 
+This is the practice of having seperate working branches for each developer and then merging those branches into the default branch. The implementation of test suites to check to see if things have broken or if conflicts have been created prior to being merged are embed in this practice. 
 
+How do you apply this concept to your setup? There are many tools these days that you can use to have visibility into your main code base and the changes that are breaking your application. CircleCI allows you to quickly see from your VCS what tests have failed so your team isn't merging broken code.
+
+If you're not using a tool to implement continous integration into your software development lifecycle, I urge you to do so. Just as no one wants to be at a meal with multiple salads, no one wants to constantly be rolling back their product due to broken code. 
+
+Hopefully this blog post gave you a deeper insight into *why* continous integration exists and got you thinking of your own developer tools. And if this post didn't do either maybe, just maybe, it made ya hungry! 🦃 🤠
