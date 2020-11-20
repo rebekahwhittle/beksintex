@@ -1,78 +1,95 @@
 ---
-title: CircleCI - Data Driven
-description: How do you become a cutting edge engineering team.
+title: What Is Continuous Integration?
+description: Continuous Integration and the thanksgiving food list.
 draft: true
 ---
 
-### CircleCI - Data Driven
+##### What's your favorite thanksgiving food?
 
-> **In times of uncertainty, developers looked to automation to create stability in systems they can control.**
+Mine, *personally*, is sweet potatoe casserole. Maybe it's a southern thing, but those warm, sweet, fluffy potatoes blanketed under marshmallows make my tastebuds come alive. I'd go so far to argue that a Thanksgiving feast isn't complete without this sweet and savory dish.  
+
+My friendsgiving, (friends only - no family drama) was the other night. As we were planning, we began to mitigate who was bringing what. Of course, I volunteered to bring a sweet potatoe casserole and green beans!
+
+Before we keep going I should quell your anxiety. Yes, you clicked the right blog post. Yes, I will tie this back to continuous integration. No, I will *not* be sharing my secret ingredient for the best sweet potatoe casserole. 
+
+Back to friendsgiving planning. 
+
+For context, there was a group chat with a few people but outside of that text we could invite friends and delegate what they should bring. 
+
+In the group chat this was the working list: 
+
+
+### 📝
+> Jamie: pies
 >
-> **Namely, we suggest that leaders focus on building resilient teams and preventing individual burnout.**
+> Lisa: turkey
+>
+> The Smiths: ham, rolls
+>
+> Beks: sweet potatoes, green beans
+>
+> Lyn: mac'n'cheese, mashed potatoes
 
 
 
-need both teams & people _processes_ that can **scale**
+Outside of this group text I invited two seperate friends. I sent the above list to both people and kindly asked they contribute and bring something. I awaited their responses. 
 
-key element are _exhaustive test coverage_ - you need high confidence _in_ your test coverage
+Daniel responded first and said he'd bring a salad. Although I wanted to push back and ask who the hell eats healthy soggy greens on Thanksgiving, I didn't, and instead added him to the working list. 
 
-passing test don't just mean no bugs - they _could_ mean an absence of test _coverage_ 
+Updated list:
 
-##### What does a high-performing team look like?
 
-* throughput: average number of workflows you run a day
-  * workflow run are indiciating how many units are moving through app development pipeline
-  * commit size is important - too large means hard to fix, too small means not meaningful deploys
-  * setting baseline metrics assists in forcasting productiving 
-    * we're not tracking deploy rate - we're tracking pipeline coverage 
-* meantime to recovery: average time of failed job to making it a succesful job
-  * metric gives visiblity into _test coverage_ of your application
-    * alievates fear of inserting buggy code 
-* success rate: the percentage of green builds or passing builds
-  * tracking success rate on main branches not topic branches 
-    * failures on topic branches is valuable & expected
-    * failures on main branches points to stability issues 
-* duration:  how long your workflow takes
-  * how quickly are your developers getting a signal of pass / fail? 
-  * can't fix what you don't know so gotta make it quick 
-  * rich information with quick duration = best developer feedback loop
-    * testing is _vital here_ but lets' think outside of ✅ or ❌
-      * build passed - experiment succeeded 
-      * build failed - experiment failed
-      * erros - experiment failed to conclude 
+### 📝
+> **Daniel: salad**
+>
+> Jamie: pies
+>
+> Lisa: turkey
+>
+> The Smiths: ham, rolls
+>
+> Beks: sweet potatoes, green beans
+>
+> Lyn: mac'n'cheese, mashed potatoes
 
 
 
-throughput goal: **0.7 times a day**
+Now remember, I asked two seperate friends if they would bring something. Daniel responded first, but quickly after we'd updated the list Natalie responded and said she'd bring, "a salad!". *(I'm learning a lot about my friends* 🤦🏼‍♀️*)*
 
-meantime to recovery goal: **1hr**
+Natalie doesn't know Daniel has already volunteered to bring soggy greens. She is looking at the outdated list. Of course I sent her the updated list and ask if she'll bring something else. Thankfully she volunteers cranberry sauce and another desert.
 
-success rate goal: **90%** 
+I have to again update the _main_ working list.
 
-duration goal: **5 - 10mins**
-
-
-
-##### How do you build resilient teams?
-
-Too small of a team decreases the pace of innovation. Steady momentum and forward focus are important to keeping teams progressing. 
-
-Your team will be able to balance 3 priorities: 
-
-1. Creating user-centric features - bettering your customer's expereince 
-2. Technical ivestments - managing technical debt keeps your team afloat
-3. Room for escalations & defects - systems break preventing users to achieve their goals
+Updated list:
 
 
+### 📝
+> **Natalie: cranberry sauce and desert**
+>
+> Daniel: salad
+>
+> Jamie: pie
+>
+> Lisa: turkey
+>
+> The Smiths: ham
+>
+> Beks: sweet potatoes, green beans
+>
+> Lyn: mac'n'cheese, mashed potatoes
 
-##### CircleCI features for high-performing teams
 
-throughput - VCS integration, Re-Run in UI, On commit trigger, Orbs
 
-meantime to recovery - SSHing, Re-Running a Workflow, Artifacts  
+Hopefully you feel the annoyance and hassle the above entailed. This manual process of updating a main list and attempting to inform everyone of what is changing is cumbersome. Thankfully with this scenario the worst thing that could happen is there were two salads no one ate. But if you translate this over to something like... software, then we have some problems. 
 
-success rate - Insights Dashboard & Insights API 
+In software development we have a large code base that's constantly changing. You can have 2 developers or 200 developers making changes to code locally and then trying to add their changes into the repository. In order to prevent copious amounts of bugs and breaks a system has to be implemented to manage this ever changing code - continuous integration.
 
-duration - Test Splitting, Caching, Resource Class Sizes
+Continuous integration is the communication of changes against a working main base of code. 
 
-*Premium Support packages lead to high-performing teams.*
+This is the practice of having seperate working branches for each developer and then merging those branches into the default branch. The implementation of test suites to check to see if things have broken or if conflicts have been created prior to being merged are embed in this practice. 
+
+How do you apply this concept to your setup? There are many tools these days you can use to have visibility into your main code base and the changes that are breaking your application. [CircleCI](https://circleci.com/) allows you to quickly see from your VCS what tests have failed so your team isn't merging broken code.
+
+If you're not using a tool to implement continuous integration into your software development lifecycle, I urge you to do so. Just as no one wants to be at a meal with multiple salads, no one wants to constantly be rolling back their product due to broken code. 
+
+Hopefully this blog post gave you deeper insight into *why* continuous integration exists and got you thinking of your own developer tools. And if this post didn't do either maybe, just maybe, it made ya hungry! 🦃 
