@@ -6,6 +6,5 @@ workflows:
 jobs:
   runner:
     machine: true
-    resource_class: rebekahwhittle/my-macbook
     steps:
       - run: echo "Hi I'm on Runners!"
